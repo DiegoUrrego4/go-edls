@@ -2,6 +2,8 @@ package main
 
 import "time"
 
+const Windows = "windows"
+
 // file types
 const (
 	fileRegular int = iota
@@ -32,7 +34,7 @@ type file struct {
 	isHidden         bool
 	userName         string
 	groupName        string
-	size             uint64
+	size             int64
 	modificationTime time.Time
 	mode             string
 }
